@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de contato do portfólio acadêmico de Matheus José Ribeiro dos Santos.">
+    <title>Contato | Matheus José Ribeiro dos Santos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body data-pagina="contato.html">
+    <header class="cabecalhoFixo">
+        <div class="limiteConteudo conteudoCabecalho">
+            <button class="botaoMenu" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menuPrincipal">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="menuPrincipal" id="menuPrincipal" aria-label="Menu principal">
+                <ul class="listaNavegacao">
+                    <li><a href="sobre.html">Sobre mim</a></li>
+                    <li><a href="formacao.html">Formação</a></li>
+                    <li><a href="portfolio.html">Portfólio</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+                <button class="alternadorTema" type="button" aria-label="Alternar tema">Tema escuro</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="paginaPrincipal">
+        <section class="topoPagina topoCompacto">
+            <div class="limiteConteudo revelar">
+                <p class="rotuloSecao">Contato</p>
+                <h1>Vamos conversar sobre oportunidades e projetos</h1>
+            </div>
+        </section>
+
+        <section class="secaoConteudo">
+            <div class="limiteConteudo">
+                <div class="gradeConteudo gradeFormularioCentralizado">
+                    <div class="pilhaConteudo revelar">
+                        <div class="cabecalhoSecao">
+                            <p class="rotuloSecao">Mensagem</p>
+                            <h2>Envie seu contato</h2>
+                        </div>
+
+                        <!-- Formulário com validação realizada em JavaScript -->
+                        <form class="formularioContato" id="formularioContato" novalidate>
+                            <div class="grupoFormulario">
+                                <label for="campoNome">Nome</label>
+                                <input type="text" id="campoNome" name="campoNome" placeholder="Digite seu nome">
+                                <small class="mensagemErro" id="mensagemErroNome"></small>
+                            </div>
+
+                            <div class="grupoFormulario">
+                                <label for="campoEmail">E-mail</label>
+                                <input type="email" id="campoEmail" name="campoEmail" placeholder="Digite seu e-mail">
+                                <small class="mensagemErro" id="mensagemErroEmail"></small>
+                            </div>
+
+                            <div class="grupoFormulario">
+                                <label for="campoMensagem">Mensagem</label>
+                                <textarea id="campoMensagem" name="campoMensagem" rows="6" placeholder="Escreva sua mensagem"></textarea>
+                                <small class="mensagemErro" id="mensagemErroMensagem"></small>
+                            </div>
+
+                            <button class="botao botaoPrimario botaoEnviar" type="submit">Enviar mensagem</button>
+                            <p class="mensagemSucesso" id="mensagemSucessoFormulario" aria-live="polite"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodapePrincipal">
+        <div class="limiteConteudo conteudoRodape">
+            <p>&copy; 2026 Matheus José Ribeiro dos Santos - Portfólio Acadêmico</p>
+        </div>
+    </footer>
+</body>
+</html>
